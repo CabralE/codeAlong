@@ -4,6 +4,8 @@
 
 {% for leetcode in leetcodes %}
 <div class="card">
-  <p>Leetcode Question: {{ leetcode.name }}</p>
+  <a href="/practice/{{ leetcode.id }}">
+    Leetcode Question: {{ leetcode.name }}</a
+  >
 </div>
 {% endfor %} {% endblock %}
