@@ -1,0 +1,9 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1>Leetcode Questions</h1>
+
+{% for leetcode in leetcodes %}
+<div class="card">
+  <p>Leetcode Question: {{ leetcode.name }}</p>
+</div>
+{% endfor %} {% endblock %}
