@@ -1,11 +1,419 @@
 {% extends 'base.html' %} {% block content %}
 
-<h1>Leetcode Questions</h1>
+<h2 class="leetcode-index-header">Blind 75</h2>
 
-{% for leetcode in leetcodes %}
-<div class="card">
-  <a href="/practice/{{ leetcode.id }}">
-    Leetcode Question: {{ leetcode.name }}</a
-  >
+<div class="leetcode-index-container">
+  <div class="box">
+    <button class="accordion">Arrays & Hashing</button>
+    <div class="panel">
+      <table>
+        <tr>
+          <th>Status</th>
+          <th>Star</th>
+          <th class="problem-td" id="leetcode-index-problem">Problem</th>
+          <th>Difficulty</th>
+          <th>Video Solution</th>
+          <th>Code</th>
+        </tr>
+        <tr>
+          <td class="leetcode-index-td"><input type="checkbox" /></td>
+          <td class="leetcode-index-td">
+            <span class="fa fa-star checked"></span>
+          </td>
+          <td class="problem-td">Valid Anagram</td>
+          <td class="leetcode-index-td-difficulty">Easy</td>
+          <td class="leetcode-index-td"><button>vid icon</button></td>
+          <td class="leetcode-index-td"><button>JavaScript</button></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><span class="fa fa-star checked"></span></td>
+          <td class="problem-td">Valid Anagram</td>
+          <td class="leetcode-index-td-difficulty">Easy</td>
+          <td><button>vid icon</button></td>
+          <td><button>JavaScript</button></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><span class="fa fa-star checked"></span></td>
+          <td class="problem-td">Two Sum</td>
+          <td class="leetcode-index-td-difficulty">Easy</td>
+          <td><button>vid icon</button></td>
+          <td><button>JavaScript</button></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><span class="fa fa-star checked"></span></td>
+          <td class="problem-td">Contains Duplicate</td>
+          <td class="leetcode-index-td-difficulty">Easy</td>
+          <td><button>vid icon</button></td>
+          <td><button>JavaScript</button></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><span class="fa fa-star checked"></span></td>
+          <td class="problem-td">Top K Frequent Elements</td>
+          <td class="leetcode-index-td-difficulty">Medium</td>
+          <td><button>vid icon</button></td>
+          <td><button>JavaScript</button></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><span class="fa fa-star checked"></span></td>
+          <td class="problem-td">Prodct of Array Except Self</td>
+          <td class="leetcode-index-td-difficulty">Medium</td>
+          <td><button>vid icon</button></td>
+          <td><button>JavaScript</button></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><span class="fa fa-star checked"></span></td>
+          <td class="problem-td">Groud Anagrams</td>
+          <td class="leetcode-index-td-difficulty">Medium</td>
+          <td><button>vid icon</button></td>
+          <td><button>JavaScript</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="box">
+    <button class="accordion">Two Pointers</button>
+    <div class="panel">
+      <table>
+        <tr>
+          <th>Status</th>
+          <th>Star</th>
+          <th class="problem-td">Problem</th>
+          <th>Difficulty</th>
+          <th>Video Solution</th>
+          <th>Code</th>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><span class="fa fa-star checked"></span></td>
+          <td class="problem-td">Valid Anagram</td>
+          <td>Easy</td>
+          <td><button>vid icon</button></td>
+          <td><button>JavaScript</button></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><span class="fa fa-star checked"></span></td>
+          <td class="problem-td">Valid Anagram</td>
+          <td>Easy</td>
+          <td><button>vid icon</button></td>
+          <td><button>JavaScript</button></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><span class="fa fa-star checked"></span></td>
+          <td class="problem-td">Two Sum</td>
+          <td>Easy</td>
+          <td><button>vid icon</button></td>
+          <td><button>JavaScript</button></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><span class="fa fa-star checked"></span></td>
+          <td class="problem-td">Contains Duplicate</td>
+          <td>Easy</td>
+          <td><button>vid icon</button></td>
+          <td><button>JavaScript</button></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><span class="fa fa-star checked"></span></td>
+          <td class="problem-td">Top K Frequent Elements</td>
+          <td>Medium</td>
+          <td><button>vid icon</button></td>
+          <td><button>JavaScript</button></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><span class="fa fa-star checked"></span></td>
+          <td class="problem-td">Prodct of Array Except Self</td>
+          <td>Medium</td>
+          <td><button>vid icon</button></td>
+          <td><button>JavaScript</button></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><span class="fa fa-star checked"></span></td>
+          <td class="problem-td">Groud Anagrams</td>
+          <td>Medium</td>
+          <td><button>vid icon</button></td>
+          <td><button>JavaScript</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="box">
+    <button class="accordion">Sliding Window</button>
+    <div class="panel">
+      <table>
+        <tr>
+          <th>Status</th>
+          <th>Star</th>
+          <th class="problem-td">Problem</th>
+          <th>Difficulty</th>
+          <th>Video Solution</th>
+          <th>Code</th>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><span class="fa fa-star checked"></span></td>
+          <td class="problem-td">Valid Anagram</td>
+          <td>Easy</td>
+          <td><button>vid icon</button></td>
+          <td><button>JavaScript</button></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><span class="fa fa-star checked"></span></td>
+          <td class="problem-td">Valid Anagram</td>
+          <td>Easy</td>
+          <td><button>vid icon</button></td>
+          <td><button>JavaScript</button></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><span class="fa fa-star checked"></span></td>
+          <td class="problem-td">Two Sum</td>
+          <td>Easy</td>
+          <td><button>vid icon</button></td>
+          <td><button>JavaScript</button></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><span class="fa fa-star checked"></span></td>
+          <td class="problem-td">Contains Duplicate</td>
+          <td>Easy</td>
+          <td><button>vid icon</button></td>
+          <td><button>JavaScript</button></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><span class="fa fa-star checked"></span></td>
+          <td class="problem-td">Top K Frequent Elements</td>
+          <td>Medium</td>
+          <td><button>vid icon</button></td>
+          <td><button>JavaScript</button></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><span class="fa fa-star checked"></span></td>
+          <td class="problem-td">Prodct of Array Except Self</td>
+          <td>Medium</td>
+          <td><button>vid icon</button></td>
+          <td><button>JavaScript</button></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><span class="fa fa-star checked"></span></td>
+          <td class="problem-td">Groud Anagrams</td>
+          <td>Medium</td>
+          <td><button>vid icon</button></td>
+          <td><button>JavaScript</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="box">
+    <button class="accordion">Test</button>
+    <div class="panel">
+      <table>
+        <tr>
+          <th>Status</th>
+          <th>Star</th>
+          <th class="problem-td">Problem</th>
+          <th>Difficulty</th>
+          <th>Video Solution</th>
+          <th>Code</th>
+        </tr>
+        {% for leetcode in leetcodes %}
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><span class="fa fa-star checked"></span></td>
+          <td class="problem-td leetcode-index-td-link"><a href="http://www.leetcode.com/problems/{{leetcode.link}}" target="_blank">{{ leetcode.name }}</a></td>
+          <td>Easy</td>
+          <td><button>vid icon</button></td>
+          <td><button>JavaScript</button></td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+  </div>
+
+    <div class="box">
+    <button class="accordion">Test 2: Linked List</button>
+    <div class="panel">
+      <table>
+        <tr>
+          <th>Status</th>
+          <th>Star</th>
+          <th class="problem-td">Problem</th>
+          <th>Difficulty</th>
+          <th>Video Solution</th>
+          <th>Code</th>
+        </tr>
+        {% for leetcode in leetcodes %}
+          {% if leetcode.category == 'Linked List' %}
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td><span class="fa fa-star checked"></span></td>
+              <td class="problem-td leetcode-index-td-link"><a href="http://www.leetcode.com/problems/{{leetcode.link}}" target="_blank">{{ leetcode.name }}</a></td>
+              <td>{{ leetcode.difficulty }}</td>
+              <td><a href="https://www.youtube.com/watch?v={{ leetcode.video_solution}}" target="_blank">Video Solution</a></td>
+              <td><button>{{ leetcode.code }}</button></td>
+            </tr>
+          {% endif %}
+        {% endfor %}
+      </table>
+    </div>
+  </div>
+
+  <div class="box">
+    <button class="accordion">Test 3: Arrays & Hashing</button>
+    <div class="panel">
+      <table>
+        <tr>
+          <th>Status</th>
+          <th>Star</th>
+          <th class="problem-td">Problem</th>
+          <th>Difficulty</th>
+          <th>Video Solution</th>
+          <th>Code</th>
+        </tr>
+        {% for leetcode in leetcodes %}
+          {% if leetcode.category == 'Arrays & Hashing' %}
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td><span class="fa fa-star checked"></span></td>
+              <td class="problem-td leetcode-index-td-link"><a href="http://www.leetcode.com/problems/{{leetcode.link}}" target="_blank">{{ leetcode.name }}</a></td>
+              <td>{{ leetcode.difficulty }}</td>
+              <td><a href="https://www.youtube.com/watch?v={{ leetcode.video_solution}}" target="_blank">Video Solution</a></td>
+              <td><button>{{ leetcode.code }}</button></td>
+            </tr>
+          {% endif %}
+        {% endfor %}
+      </table>
+    </div>
+  </div>
+
+  <div class="box">
+    <button class="accordion">Test 4: Two Pointers</button>
+    <div class="panel">
+      <table>
+        <tr>
+          <th>Status</th>
+          <th>Star</th>
+          <th class="problem-td">Problem</th>
+          <th>Difficulty</th>
+          <th>Video Solution</th>
+          <th>Code</th>
+        </tr>
+        {% for leetcode in leetcodes %}
+          {% if leetcode.category == 'Two Pointers' %}
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td><span class="fa fa-star checked"></span></td>
+              <td class="problem-td leetcode-index-td-link"><a href="http://www.leetcode.com/problems/{{leetcode.link}}" target="_blank">{{ leetcode.name }}</a></td>
+              <td>{{ leetcode.difficulty }}</td>
+              <td><a href="https://www.youtube.com/watch?v={{ leetcode.video_solution}}" target="_blank">Video Solution</a></td>
+              <td><button>{{ leetcode.code }}</button></td>
+            </tr>
+          {% endif %}
+        {% endfor %}
+      </table>
+    </div>
+  </div>
+
+  <div class="box">
+    <button class="accordion">Test 5: Sliding Window</button>
+    <div class="panel">
+      <table>
+        <tr>
+          <th>Status</th>
+          <th>Star</th>
+          <th class="problem-td">Problem</th>
+          <th>Difficulty</th>
+          <th>Video Solution</th>
+          <th>Code</th>
+        </tr>
+        {% for leetcode in leetcodes %}
+          {% if leetcode.category == 'Sliding Window' %}
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td><span class="fa fa-star checked"></span></td>
+              <td class="problem-td leetcode-index-td-link"><a href="http://www.leetcode.com/problems/{{leetcode.link}}" target="_blank">{{ leetcode.name }}</a></td>
+              <td>{{ leetcode.difficulty }}</td>
+              <td><a href="https://www.youtube.com/watch?v={{ leetcode.video_solution}}" target="_blank">Video Solution</a></td>
+              <td><button>{{ leetcode.code }}</button></td>
+            </tr>
+          {% endif %}
+        {% endfor %}
+      </table>
+    </div>
+  </div>
+
+  <div class="box">
+    <button class="accordion">Test 6: Stack</button>
+    <div class="panel">
+      <table>
+        <tr>
+          <th>Status</th>
+          <th>Star</th>
+          <th class="problem-td">Problem</th>
+          <th>Difficulty</th>
+          <th>Video Solution</th>
+          <th>Code</th>
+        </tr>
+        {% for leetcode in leetcodes %}
+          {% if leetcode.category == 'Stack' %}
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td><span class="fa fa-star checked"></span></td>
+              <td class="problem-td leetcode-index-td-link"><a href="http://www.leetcode.com/problems/{{leetcode.link}}" target="_blank">{{ leetcode.name }}</a></td>
+              <td>{{ leetcode.difficulty }}</td>
+              <td><a href="https://www.youtube.com/watch?v={{ leetcode.video_solution}}" target="_blank">Video Solution</a></td>
+              <td><button>{{ leetcode.code }}</button></td>
+            </tr>
+          {% endif %}
+        {% endfor %}
+      </table>
+    </div>
+  </div>
+
+  <div class="box">
+    <button class="accordion">Test 7: Binary Search</button>
+    <div class="panel">
+      <table>
+        <tr>
+          <th>Status</th>
+          <th>Star</th>
+          <th class="problem-td">Problem</th>
+          <th>Difficulty</th>
+          <th>Video Solution</th>
+          <th>Code</th>
+        </tr>
+        {% for leetcode in leetcodes %}
+          {% if leetcode.category == 'Binary Search' %}
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td><span class="fa fa-star checked"></span></td>
+              <td class="problem-td leetcode-index-td-link"><a href="http://www.leetcode.com/problems/{{leetcode.link}}" target="_blank">{{ leetcode.name }}</a></td>
+              <td>{{ leetcode.difficulty }}</td>
+              <td><a href="https://www.youtube.com/watch?v={{ leetcode.video_solution}}" target="_blank">Video Solution</a></td>
+              <td><button>{{ leetcode.code }}</button></td>
+            </tr>
+          {% endif %}
+        {% endfor %}
+      </table>
+    </div>
+  </div>
+
+    {% endblock %}
+  </div>
 </div>
-{% endfor %} {% endblock %}

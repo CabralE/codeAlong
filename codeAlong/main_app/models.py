@@ -5,6 +5,15 @@ from datetime import date
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 
+import json
+
+json_data = open('../problemlist.json')   
+data1 = json.load(json_data) # deserialises it
+data2 = json.dumps(data1) # json formatted string
+
+
+json_data.close()
+
 # Create your models here.
 
 class Leetcode(models.Model):
@@ -15,7 +24,7 @@ class Leetcode(models.Model):
     code = models.CharField(max_length=200)
     study_solution = models.CharField(max_length=200)
     category = models.CharField(max_length=50)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    # user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
             return self.name
@@ -26,6 +35,7 @@ sample = [
     Leetcode('Valid Anagram','https://leetcode.com/problems/valid-anagram/','easy','https://www.youtube.comwatch?v=9UtInBqnCgA', 'code solution', 'study solution', 'Arrays & Hashing'),
     Leetcode('Two Sum','https://leetcode.com/problems/two-sum/','easy','https://www.youtube.com/watchv=KLlXCFG5TnA', 'code solution', 'study solution', 'Arrays & Hashing')
 ]
+
 
 '''
 l = Leetcode(name="Contains Duplicate", link='https://leetcode.com/problems/contains-duplicate/',
