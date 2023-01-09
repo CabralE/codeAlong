@@ -60,3 +60,116 @@ a:visited {
 }
 
 /* --------------- End of Header --------------- */
+
+/* --------------- leetcode index --------------- */
+
+.leetcode-index-header {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  text-align: center;
+}
+
+.leetcode-index-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0px 10% 0 10%;
+}
+
+.leetcode-index-accordion {
+  display: flex;
+  justify-content: center;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 720px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+table {
+  display: table;
+  width: 100%;
+  min-width: 50px;
+  max-width: 80vw;
+  text-indent: initial;
+  color: #363636;
+  background-color: #fff;
+}
+
+table tr th {
+  background: #f1f1f1;
+  color: #363636;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.leetcode-index-td {
+  background-color: white;
+}
+
+.problem-td {
+  text-align: left;
+  color: blue;
+  text-decoration: none;
+}
+
+#leetcode-index-problem {
+  text-align: left;
+  color: black;
+}
+
+.checked {
+  background-color: transparent;
+}
+
+td span {
+  background-color: green;
+  color: orange;
+}
+
+td input {
+  background-color: green;
+  color: green;
+}
+
+.leetcode-index-td-difficulty {
+  color: green;
+}
+
+.leetcode-index-td-link:visited {
+  text-decoration: none;
+  color: blue;
+}
+
+button {
+  width: 100%;
+  min-width: 50px;
+  max-width: 80vw;
+}
+
+/* --------------- End of leetcode index --------------- */
