@@ -17,10 +17,10 @@ json_data.close()
 # Create your models here.
 
 class Leetcode(models.Model):
-    name = models.CharField(max_length=20)
+    name = models.CharField(max_length=100)
     link = models.CharField(max_length=100)
     difficulty = models.CharField(max_length=30)
-    video_solution = models.CharField(max_length=30)
+    video_solution = models.CharField(max_length=100)
     code = models.CharField(max_length=200)
     study_solution = models.CharField(max_length=200)
     category = models.CharField(max_length=50)
